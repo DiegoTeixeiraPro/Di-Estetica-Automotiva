@@ -1,17 +1,28 @@
-import { ServiceItem } from "../ServiceItem";
+import { ServiceItem } from '../ServiceItem';
 
-export const ServiceList = ({ serviceList, removeServiceList }) => {
+import styles from './style.module.css';
+
+export const ServiceList = ({
+  serviceList,
+  removeServiceList,
+}) => {
   return (
-    <>
+    <div className={styles.container}>
       {serviceList.length == 0 ? (
-        <p>Sem serviços cadastrados</p>
+        <p>Nenhum serviço cadastrado</p>
       ) : (
         <ul>
           {serviceList.map((service) => {
-            return <ServiceItem key={service.id} service={service} removeServiceList={removeServiceList} />;
+            return (
+              <ServiceItem
+                key={service.id}
+                service={service}
+                removeServiceList={removeServiceList}
+              />
+            );
           })}
         </ul>
       )}
-    </>
+    </div>
   );
 };

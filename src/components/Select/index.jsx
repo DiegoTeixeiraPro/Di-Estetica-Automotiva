@@ -1,4 +1,6 @@
-import { useState, useEffect } from "react";
+import styles from './style.module.css';
+
+import { useState, useEffect } from 'react';
 
 export const Select = ({ label, value, type, options, onChange, ...rest }) => {
   const [selectedValue, setSelectedValue] = useState(value);
@@ -13,15 +15,20 @@ export const Select = ({ label, value, type, options, onChange, ...rest }) => {
   };
 
   return (
-    <div>
+    <fieldset>
       <label>{label}</label>
-      <select type={type} value={selectedValue} onChange={handleSelectChange} {...rest}>
+      <select
+        type={type}
+        value={selectedValue}
+        onChange={handleSelectChange}
+        {...rest}
+      >
         {options.map((option) => (
           <option value={option.value} key={option.id}>
             {option.name}
           </option>
         ))}
       </select>
-    </div>
+    </fieldset>
   );
 };

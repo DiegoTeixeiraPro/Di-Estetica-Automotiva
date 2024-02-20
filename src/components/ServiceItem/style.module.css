@@ -1,0 +1,30 @@
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+
+  .nameService {
+    font-family: 'Comfortaa', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-blue-dark);
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+
+    button {
+      border: none;
+      background-color: transparent;
+    }
+
+    .priceService {
+      font-family: 'Comfortaa', 'Arial', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--color-blue-dark);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  h3 {
+    font-family: 'Comfortaa', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      h4 {
+        font-family: 'Comfortaa', 'Arial', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .totalBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}

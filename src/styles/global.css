@@ -1,0 +1,38 @@
+:root {
+  --color-white: #ffffff;
+  --color-blue: #56a0d7;
+  --color-blue-dark: #2e2f4d;
+  --color-gray: #f4f3f3;
+  --color-gray-dark: #545454;
+}
+
+body {
+  background-color: var(--color-gray);
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  background-color: var(--color-gray);
+
+  padding-top: 100px;
+
+  h1 {
+    margin: 20px 20px 40px 20px;
+    font-family: 'Comfortaa', 'Arial', sans-serif;
+    font-size: 20px;
+    color: var(--color-blue);
+  }
+}
+
+@media (min-width: 750px) {
+  .appContainer {
+    align-items: center;
+
+    main {
+      width: 750px;
+    }
+  }
+}

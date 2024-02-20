@@ -1,12 +1,14 @@
-import { Form } from "./components/Form";
-import { Header } from "./components/Header";
+import { Form } from './components/Form';
+import { Header } from './components/Header';
+
+import './styles/index.css';
 
 function App() {
   return (
-    <div>
+    <div className="appContainer">
       <Header />
-      <main className="container">
-        <h3>Orçamento de serviços</h3>
+      <main>
+        <h1>Orçamento de serviços</h1>
         <div>
           <Form />
         </div>
@@ -14,5 +16,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
